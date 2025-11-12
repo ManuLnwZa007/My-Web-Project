@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>โปรแกรมลบพื้นหลังด้วย AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2 style="color: white; font-size: 20px; margin-bottom: 10px;">AI RemoveBG Tool</h2>
+        <h1 style="color: white; font-size: 30px; margin-bottom: 20px;">โปรแกรมลบพื้นหลังด้วย AI</h1>
+        <p style="color: #ccc; margin-bottom: 30px;">
+            อัปโหลดภาพของคุณ แล้วให้ระบบช่วยลบพื้นหลังออกให้อัตโนมัติ
+        </p>
+
+        <label for="imageInput" class="start-button">
+            เริ่มต้นลบพื้นหลัง
+        </label>
+        
+        <div class="support-box">
+            <h3>ภาพแบบไหนที่ระบบรองรับ?</h3>
+            <div class="checkbox-group">
+                <input type="checkbox" id="type1" checked disabled>
+                <label for="type1">ภาพคนจริง สิ่งของ หรือฉากหลังทั่วไป</label>
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" id="type2" disabled>
+                <label for="type2">ไฟล์กราฟิก เช่น โลโก้ ลายเส้น (เวอร์ชันถัดไป)</label>
+            </div>
+        </div>
+        
+        <div class="example-container">
+            <img src="images/03385a75-d92e-4cda-83e9-ad0442c2aa93.jpg" alt="ตัวอย่างภาพลบพื้นหลัง" class="example-image">
+            <p class="example-text">ตัวอย่างภาพที่ถูกลบพื้นหลัง</p>
+        </div>
+
+        <input type="file" id="imageInput" accept="image/*" style="display: none;">
+
+        <div id="previewContainer" class="preview-container" style="display: none;">
+            <img id="uploadedImage" src="" alt="ภาพที่อัปโหลด" class="uploaded-image">
+            
+            <a id="downloadLink" href="#" download="removed-bg-image.png" class="download-button" style="display: block; margin-top: 15px;">
+                ดาวน์โหลดรูปภาพ
+            </a>
+        </div>
+
+        <div id="loadingText" class="loading-text" style="display: none;">
+            กำลังดำเนินการ...
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

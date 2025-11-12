@@ -1,0 +1,122 @@
+/* การจัดรูปแบบพื้นฐาน */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e; /* สีพื้นหลังเข้ม */
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* จัดให้อยู่ด้านบน */
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px; /* จำกัดความกว้างของเนื้อหาหลัก */
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* ปุ่มเริ่มต้น */
+.start-button {
+    display: inline-block;
+    background-color: #ff5555; /* สีแดงสดใส */
+    color: white;
+    padding: 12px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    margin-bottom: 30px;
+}
+
+.start-button:hover {
+    background-color: #cc4444;
+}
+
+/* กล่องแสดงการรองรับ */
+.support-box {
+    background-color: #2a2a2a; /* พื้นหลังกล่องเข้มขึ้น */
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.support-box h3 {
+    margin-top: 0;
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.checkbox-group {
+    display: block;
+    margin-bottom: 10px;
+    color: #cfcfcf;
+}
+
+.checkbox-group label {
+    margin-left: 8px;
+}
+
+/* ตัวอย่างภาพ */
+.example-container {
+    margin-bottom: 30px;
+}
+
+.example-image {
+    max-width: 100%;
+    border-radius: 12px;
+    border: 1px solid #333; /* ขอบเล็กน้อย */
+}
+
+.example-text {
+    color: #aaaaaa;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* กล่องแสดงภาพอัปโหลดและผลลัพธ์ */
+.preview-container {
+    margin-top: 20px;
+    padding: 10px;
+    border: 2px solid #00c6ff; /* ขอบสีฟ้าเรืองแสง */
+    border-radius: 15px;
+    display: inline-block; /* ให้กล่องกว้างเท่ารูป */
+}
+
+.uploaded-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block; /* ลบช่องว่างด้านล่างรูปภาพ */
+}
+
+.loading-text {
+    color: #00c6ff;
+    font-size: 18px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* ปุ่มดาวน์โหลด */
+.download-button {
+    display: inline-block;
+    background-color: #00c6ff; /* สีฟ้าเดียวกับกรอบ */
+    color: #1e1e1e; /* ตัวอักษรสีเข้ม */
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none; /* ลบขีดเส้นใต้ลิงก์ */
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.download-button:hover {
+    background-color: #00a0d4;
+}
